@@ -1,3 +1,14 @@
+virtualenv -p /usr/bin/python3 myENV
+source myENV/bin/activate
+python -V
+pip -V
+
+pip install flask
+pip install flask_wtf
+pip install flask_pymongo 
+pip install flask_restful
+pip install passlib
+
 mongo --username root --password example
 show databases  list all db 
 db.getUsers()   list all db users
