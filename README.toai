@@ -1,0 +1,27 @@
+mongo --username root --password example
+show databases  list all db 
+db.getUsers()   list all db users
+use apidb       switch/connect to apidb
+show collections|tables  list all collections 
+db.users.find()   list all records in users table/collection
+db.users.deleteOne ({"_id": ObjectId("5eafc1f52e9047353efd993c")})
+
+db.createUser( { user: "apiuser", pwd: "apipassword", roles: [ { role: "readWrite", db: "apidb"} ] } )
+Successfully added user: {
+	"user" : "apiuser",
+	"roles" : [
+		{
+			"role" : "readWrite",
+			"db" : "apidb"
+		}
+	]
+}
+
+crUsers.sh  - create Users curl script
+delUser.sh  - delete user curl script
+crProduct.sh  - create product data
+Lesson1.py - render a login page using flask (not API example)
+Lesson2.py - render a User creation page using flask (not API example)
+user.py - API to create/add/delete users collection
+product.py - API to create/add/delete/update product collection
+config.py - database connection info

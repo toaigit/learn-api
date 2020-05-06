@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Login | Flask App</title></head>
+<body>
+  {{message}} <br>
+  <form name='loginform' method='POST'>
+       <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
+       <input type="text" name="username">
+       <input type="password" name="password">
+       <input type="submit" name="login">
+  </form>
+</body>
+</html>
+
